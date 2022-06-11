@@ -49,9 +49,9 @@ class Front extends CI_Controller {
         );
         $insert = $this->Dbs->insert($data,'t_obat');
         if ($insert){
-            echo "<script type='text/javascript'>alert('Berhasil Menambahkan Data Pengarang'); document.location='http://localhost/apotekmart/front/halaman_admin' </script>";
+            echo "<script type='text/javascript'>alert('Berhasil Menambahkan Data Pengarang'); document.location='http://localhost/Telkom-PCC/front/halaman_admin' </script>";
         }else{
-            echo "<script type='text/javascript'>alert('Gagal Menambahkan Data Pengarang'); document.location='http://localhost/apotekmart/front/halaman_admin' </script>";
+            echo "<script type='text/javascript'>alert('Gagal Menambahkan Data Pengarang'); document.location='http://localhost/Telkom-PCC/front/halaman_admin' </script>";
 
         }
     }
@@ -66,9 +66,9 @@ class Front extends CI_Controller {
         );
         $insert = $this->Dbs->insert($data,'farmasi');
         if ($insert){
-            echo "<script type='text/javascript'>alert('Berhasil Menambahkan Data Pengarang'); document.location='http://localhost/apotekmart/front/halaman_admin' </script>";
+            echo "<script type='text/javascript'>alert('Berhasil Menambahkan Data Pengarang'); document.location='http://localhost/Telkom-PCC/front/halaman_admin' </script>";
         }else{
-            echo "<script type='text/javascript'>alert('Gagal Menambahkan Data Pengarang'); document.location='http://localhost/apotekmart/front/halaman_admin' </script>";
+            echo "<script type='text/javascript'>alert('Gagal Menambahkan Data Pengarang'); document.location='http://localhost/Telkom-PCC/front/halaman_admin' </script>";
 
         }
     }
@@ -98,9 +98,9 @@ class Front extends CI_Controller {
         $update=$this->Dbs->update($data,'farmasi','id_farmasi',$id);
 
         if ($update) {
-            echo "<script type='text/javascript'>alert('Berhasil Mengubah Data Pengarang'); document.location='http://localhost/apotekmart/front/halaman_admin' </script>";
+            echo "<script type='text/javascript'>alert('Berhasil Mengubah Data Pengarang'); document.location='http://localhost/Telkom-PCC/front/halaman_admin' </script>";
         }else{
-            echo "<script type='text/javascript'>alert('Gagal Mengubah Data Pengarang'); document.location='http://localhost/apotekmart/front/halaman_admin' </script>";
+            echo "<script type='text/javascript'>alert('Gagal Mengubah Data Pengarang'); document.location='http://localhost/Telkom-PCC/front/halaman_admin' </script>";
         }
         
     }
@@ -133,9 +133,9 @@ class Front extends CI_Controller {
         $update=$this->Dbs->update($data,'t_obat','id_obat',$id);
 
         if ($update) {
-            echo "<script type='text/javascript'>alert('Berhasil Mengubah Data Pengarang'); document.location='http://localhost/apotekmart/front/halaman_admin' </script>";
+            echo "<script type='text/javascript'>alert('Berhasil Mengubah Data Pengarang'); document.location='http://localhost/Telkom-PCC/front/halaman_admin' </script>";
         }else{
-            echo "<script type='text/javascript'>alert('Gagal Mengubah Data Pengarang'); document.location='http://localhost/apotekmart/front/halaman_admin' </script>";
+            echo "<script type='text/javascript'>alert('Gagal Mengubah Data Pengarang'); document.location='http://localhost/Telkom-PCC/front/halaman_admin' </script>";
         }
         
     }
@@ -160,9 +160,9 @@ class Front extends CI_Controller {
         $update=$this->Dbs->update($data,'t_obat','id_obat',$id);
 
         if ($update) {
-            echo "<script type='text/javascript'>alert('Berhasil Mengubah Data Pengarang'); document.location='http://localhost/apotekmart/front/halaman_pegawai' </script>";
+            echo "<script type='text/javascript'>alert('Berhasil Mengubah Data Pengarang'); document.location='http://localhost/Telkom-PCC/front/halaman_pegawai' </script>";
         }else{
-            echo "<script type='text/javascript'>alert('Gagal Mengubah Data Pengarang'); document.location='http://localhost/apotekmart/front/halaman_pegawai' </script>";
+            echo "<script type='text/javascript'>alert('Gagal Mengubah Data Pengarang'); document.location='http://localhost/Telkom-PCC/front/halaman_pegawai' </script>";
         }
         
     }
@@ -178,13 +178,13 @@ class Front extends CI_Controller {
     public function hapus_obat_admin($id){
         $where = array('id_obat' => $id);
         $this->Dbs->delete($where,'t_obat');
-        echo "<script type='text/javascript'>alert('Berhasil Dihapus'); document.location='http://localhost/apotekmart/front/halaman_admin' </script>";
+        echo "<script type='text/javascript'>alert('Berhasil Dihapus'); document.location='http://localhost/Telkom-PCC/front/halaman_admin' </script>";
     }
 
     public function hapus_farmasi_admin($id){
         $where = array('id_farmasi' => $id);
         $this->Dbs->delete($where,'farmasi');
-        echo "<script type='text/javascript'>alert('Berhasil Dihapus'); document.location='http://localhost/apotekmart/front/halaman_admin' </script>";
+        echo "<script type='text/javascript'>alert('Berhasil Dihapus'); document.location='http://localhost/Telkom-PCC/front/halaman_admin' </script>";
     }
 
 
